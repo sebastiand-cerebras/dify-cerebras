@@ -18,6 +18,7 @@ Official Cerebras model provider plugin for [Dify](https://dify.ai), enabling ul
 | `llama3.1-8b` | Fastest model, ideal for simple tasks and high throughput |
 | `gpt-oss-120b` | Largest model for demanding tasks |
 | `zai-glm-4.6` | Advanced 357B parameter model with strong reasoning |
+| `qwen-3-235b-a22b-instruct-2507` | Frontier 235B model with state-of-the-art intelligence at 1,400 tokens/s |
 
 ## Building from Source
 
