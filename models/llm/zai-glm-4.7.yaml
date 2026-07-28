@@ -1,6 +1,6 @@
-model: qwen-3-235b-a22b-instruct-2507
+model: zai-glm-4.7
 label:
-  en_US: qwen-3-235b-a22b-instruct-2507
+  en_US: zai-glm-4.7
 model_type: llm
 features:
   - agent-thought
@@ -28,7 +28,7 @@ parameter_rules:
       en_US: If specified, the model will make a best effort to sample deterministically
     required: false
 pricing:
-  input: '0.60'
-  output: '1.20'
+  input: '2.25'
+  output: '2.75'
   unit: '0.000001'
   currency: USD

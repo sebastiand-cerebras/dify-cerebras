@@ -18,9 +18,9 @@ class CerebrasProvider(ModelProvider):
         try:
             model_instance = self.get_model_instance(ModelType.LLM)
             
-            # Use llama3.1-8b as the validation model (fastest and most reliable)
+            # Use a generally available model for credential validation.
             model_instance.validate_credentials(
-                model="llama3.1-8b",
+                model="gpt-oss-120b",
                 credentials=credentials
             )
         except CredentialsValidateFailedError as ex:
