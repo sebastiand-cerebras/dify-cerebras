@@ -7,7 +7,7 @@ features:
   - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 128000
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -17,7 +17,7 @@ parameter_rules:
     use_template: max_tokens
     default: 4096
     min: 1
-    max: 8192
+    max: 40960
   - name: seed
     label:
       zh_Hans: 随机种子
@@ -28,7 +28,7 @@ parameter_rules:
       en_US: If specified, the model will make a best effort to sample deterministically
     required: false
 pricing:
-  input: '1.20'
-  output: '1.20'
+  input: '0.35'
+  output: '0.75'
   unit: '0.000001'
   currency: USD
