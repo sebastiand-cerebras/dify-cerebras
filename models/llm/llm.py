@@ -66,6 +66,23 @@ class CerebrasLargeLanguageModel(LargeLanguageModel):
             "stream": stream,
             **model_parameters
         }
+
+        if tools:
+            payload["tools"] = [
+                {
+                    "type": "function",
+                    "function": {
+                        "name": tool.name,
+                        "description": tool.description,
+                        "parameters": tool.parameters,
+                    },
+                }
+                for tool in tools
+            ]
+            payload.setdefault("tool_choice", "auto")
+
+        if user:
+            payload["user"] = user
         
         if stop:
             payload["stop"] = stop

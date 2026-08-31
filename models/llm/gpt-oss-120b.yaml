@@ -4,6 +4,7 @@ label:
 model_type: llm
 features:
   - agent-thought
+  - tool-call
   - stream-tool-call
 model_properties:
   mode: chat
